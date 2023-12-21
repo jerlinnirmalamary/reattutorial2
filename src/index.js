@@ -1,12 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import FavoriteColor from "./component/FavoriteColor";
+import Car from "./component/Car.js";
+import Scooter from "./component/scooter.js";
+import List from "./component/List.js";
+import Timer from "./component/Timer.js"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <FavoriteColor />
+    <Car />
+    <Scooter />
+    <List/>
+    <Timer/>
     <App />
   </React.StrictMode>
 );
